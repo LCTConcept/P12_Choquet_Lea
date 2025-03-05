@@ -56,21 +56,21 @@ global with sharing class ContactAPI {
         
         //Etape 3 : Créer le contact non existant dans Salesforce
         Contact newContact = new Contact();
-for (String fieldName : reqbodyMap.keySet()) {
-        newContact.put(fieldName, reqbodyMap.get(fieldName));
-    }
-             
+        for (String fieldName : reqbodyMap.keySet()) {
+            newContact.put(fieldName, reqbodyMap.get(fieldName));
+        }
+        
         
         //Etape 4 : Insérer le nouveau contact dans la base de données 
         try {
             insert newContact;
             res.statusCode = 201;  // Created Success Code
-        Map<String, String> insertSuccessMessageMap = new Map<String, String>{
-            'Message' => 'Contact créé avec succès.',
-                'ContactId' => newContact.Id
-                };
-                    res.responseBody = Blob.valueOf(JSON.serialize(insertSuccessMessageMap));       
-    }     catch (DmlException e) {
+            Map<String, String> insertSuccessMessageMap = new Map<String, String>{
+                'Message' => 'Contact créé avec succès.',
+                    'ContactId' => newContact.Id
+                    };
+                        res.responseBody = Blob.valueOf(JSON.serialize(insertSuccessMessageMap));       
+        }     catch (DmlException e) {
             res.statusCode = 500;  // Internal Server Error
             Map<String, String> insertErrorMessageMap = new Map<String, String>{
                 'Message' => 'Echec de création du contact.',
@@ -80,7 +80,7 @@ for (String fieldName : reqbodyMap.keySet()) {
             return;
         }
     }
-
+    
     
     //CONTACT02 : Modification d’un contact
     @HttpPatch
@@ -135,19 +135,9 @@ for (String fieldName : reqbodyMap.keySet()) {
                 isUpdated = true;
             }
         }
+       
         
-        //Etape 5.1 : Pas de mise à jour nécessaire 
-        if (!isUpdated) {
-            res.statusCode = 200;  // OK success code
-            Map<String, String> noUpdateMessageMap = new Map<String, String>{
-                'Message' => 'Aucune mise à jour effectuée, les données sont déjà à jour.'
-                    };
-                        res.responseBody = Blob.valueOf(JSON.serialize(noUpdateMessageMap));
-            return;
-        }
-        
-        
-        //Etape 5.2 : Mise à jour du contact
+        //Etape 5 : Mise à jour du contact
         try {
             update contactToUpdate;
             res.statusCode = 200;  // OK success code
@@ -197,7 +187,7 @@ for (String fieldName : reqbodyMap.keySet()) {
             return;
         }
         Contact contactToDeactivate = contacts[0];
-                
+        
         
         // Etape 3 : Mettre à jour le champ Is_Active__c du contact à false pour le marquer comme inactif
         try {
