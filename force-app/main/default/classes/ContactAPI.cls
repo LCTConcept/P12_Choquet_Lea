@@ -127,15 +127,13 @@ global with sharing class ContactAPI {
         
         
         //Etape 4 : Préparation de la mise à jour des données du contact 
-        Boolean isUpdated = false;
         for (String field : reqbodyMap.keySet()) {
             Object newValue = reqbodyMap.get(field);
             if (newValue != null) {
                 contactToUpdate.put(field, newValue);
-                isUpdated = true;
             }
         }
-       
+        
         
         //Etape 5 : Mise à jour du contact
         try {
@@ -181,7 +179,7 @@ global with sharing class ContactAPI {
         if (contacts.isEmpty()) {
             res.statusCode = 404;  // Not Found
             Map<String, String> notFoundErrorResponse = new Map<String, String>{
-                'Message' => 'Contact non trouvé, mise à jour impossible.'
+                'Message' => 'Contact non trouvé, suppression impossible.'
                     };
                         res.responseBody = Blob.valueOf(JSON.serialize(notFoundErrorResponse));
             return;
