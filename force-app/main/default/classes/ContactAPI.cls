@@ -54,6 +54,7 @@ global with sharing class ContactAPI {
             return;
         } 
         
+        
         //Etape 3 : Créer le contact non existant dans Salesforce
         Contact newContact = new Contact();
         for (String fieldName : reqbodyMap.keySet()) {

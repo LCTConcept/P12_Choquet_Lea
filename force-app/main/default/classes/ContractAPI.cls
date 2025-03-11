@@ -122,11 +122,18 @@ global with sharing class ContractAPI {
         
         
         //Etape 4 : Préparation de la mise à jour des données du contrat 
-        for (String field : reqbodyMap.keySet()) {
-            Object newValue = reqbodyMap.get(field);
-            if (newValue != null) {
-                contractToUpdate.put(field, newValue);
-            }
+        
+        contractToUpdate.AccountId = (String) reqbodyMap.get('accountId');
+        contractToUpdate.ContractTerm = Integer.valueOf(reqbodyMap.get('ContractTerm'));
+        contractToUpdate.Status = (String) reqbodyMap.get('Status');
+        contractToUpdate.StartDate = Date.valueOf((String) reqbodyMap.get('StartDate'));
+        
+        for (String fieldName : reqbodyMap.keySet()) {
+            if (fieldName != 'AccountName' 
+                && fieldName != 'ContractTerm' 
+                && fieldName != 'Status' 
+                && fieldName != 'StartDate') {
+                    contractToUpdate.put(fieldName, reqbodyMap.get(fieldName));}
         }
         
         

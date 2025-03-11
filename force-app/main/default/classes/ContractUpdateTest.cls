@@ -25,16 +25,24 @@ public class ContractUpdateTest {
     public static void testUpdateContactValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
-        Contract existingContract = [SELECT Id, Name, Status FROM Contract WHERE Name = 'Test Contract' LIMIT 1];
+        Contract existingContract = [SELECT Id, Name, Status, AccountId, ContractTerm, StartDate  FROM Contract WHERE Name = 'Test Contract' LIMIT 1];
+        System.debug('Statut avant update : '+ existingContract.Status);
+        System.debug('ContractTerm avant update : '+ existingContract.ContractTerm);
+        System.debug('StartDate avant update : '+ existingContract.StartDate);
+
         
         RestRequest req = new RestRequest();
         req.requestUri = '/services/apexrest/contract/' + existingContract.Id;
         req.httpMethod = 'PATCH';
         
         //Modifications à updater
-        Map<String, Object> body = new Map<String, Object>{
-            'Status' => 'Activated'
+       Map<String, Object> body = new Map<String, Object>{
+            'AccountId' => existingContract.AccountId,  
+                'ContractTerm' => 24,
+                'Status' => 'Activated',
+                'StartDate' =>'2024-03-06'
                 };
+                    
                     req.requestBody = Blob.valueOf(JSON.serialize(body));
         RestContext.request = req;
         
@@ -49,8 +57,10 @@ public class ContractUpdateTest {
         Test.stopTest();
         
         //ALORS les données du contact ont été modifié 
-        Contract updatedContract = [SELECT Id, Status FROM Contract WHERE Id = :existingContract.Id];
+        Contract updatedContract = [SELECT Id, Status, ContractTerm, StartDate FROM Contract WHERE Id = :existingContract.Id];
         System.debug('Statut après update : '+ updatedContract.Status);
+        System.debug('ContractTerm après update : '+ updatedContract.ContractTerm);
+        System.debug('StartDate après update : '+ updatedContract.StartDate);
         
         //VERIFICATIONS : 
         System.assertEquals('Activated', updatedContract.Status);
