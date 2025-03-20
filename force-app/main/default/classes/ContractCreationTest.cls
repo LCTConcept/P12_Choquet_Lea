@@ -1,13 +1,11 @@
 @isTest
 public class ContractCreationTest {
     
-    // Test Setup : Création d'un compte pour les tests
+// Test Setup : Création des données de test
     @testSetup
-    public static void createTestAccount() {
-        Account testAccount = new Account(
-            Name = 'Test Account'
-        );
-        insert testAccount;
+    public static void createTestData() {
+        // Création d'un compte
+        TestDataFactory.createTestAccount(true);
     }
     
     // CONTRACT01_TEST01 : Vérification de la création d’un contrat

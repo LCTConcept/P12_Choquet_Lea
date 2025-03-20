@@ -2,17 +2,10 @@
 public class ContactUpdateAPITest {
     
     // Test Setup : Création d'un contact de base utilisé dans les tests
-    @testSetup
-    public static void createTestContact() {
-        Contact testContact = new Contact(
-            LastName = 'Sarah',
-            FirstName = 'Parker',
-            Email = 'sarahparker@test.com',
-            Phone = '123-456-7890',
-            Is_Active__c = true
-        );
-        
-        insert testContact;
+     @testSetup
+    public static void setupTestData() {
+        // Création d'un contact de test
+        TestDataFactory.createTestContact(true);
     }
     
     //CONTACT02_TEST01 : Update d'un contact existant 

@@ -1,18 +1,10 @@
 @isTest
 public class ContactCreationAPITest {
     
-    // Test Setup : Création d'un contact de base utilisé dans les tests
     @testSetup
-    public static void createTestContact() {
-        Contact testContact = new Contact(
-            LastName = 'Sarah',
-            FirstName = 'Parker',
-            Email = 'sarahparker@test.com',
-            Phone = '123-456-7890',
-            Is_Active__c = true
-        );
-        
-        insert testContact;
+    public static void setupTestData() {
+        // Création d'un contact existant dans la base pour tester la duplication
+        TestDataFactory.createTestContact(true);
     }
     
     //CONTACT01_TEST01 : Vérification de l'existence du contact
