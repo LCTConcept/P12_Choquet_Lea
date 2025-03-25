@@ -21,7 +21,9 @@ public class TestDataFactory {
     // Création d'un compte de test
     public static Account createTestAccount(Boolean doInsert) {
         Account testAccount = new Account(
-            Name = 'Test Account'
+            Name = 'Test Account', 
+            Phone = '0000000000',
+            AccountNumber = 'BE4Update'
         );
 
         if (doInsert) {
