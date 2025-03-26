@@ -110,7 +110,7 @@ global with sharing class AccountAPI {
         Map<String, Object> reqbodyMap = (Map<String, Object>) JSON.deserializeUntyped(requestBody);
         
         
-        //Etape 4 : Préparation de la mise à jour des données du contact 
+        //Etape 4 : Préparation de la mise à jour des données du compte 
         for (String field : reqbodyMap.keySet()) {
             Object newValue = reqbodyMap.get(field);
             if (newValue != null) {
@@ -119,7 +119,7 @@ global with sharing class AccountAPI {
         }
         
         
-        //Etape 5 : Mise à jour du contact
+        //Etape 5 : Mise à jour du compte
         try {
             update accountToUpdate;
             res.statusCode = 200;  // OK success code
