@@ -1,3 +1,14 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de modification de contrats.
+ * 
+ * Les tests vérifient les scénarios suivants :
+ * 1. Mise à jour d'un contrat existant avec des données valides.
+ * 2. Tentative de mise à jour d'un contrat avec un ID invalide.
+ * 3. Tentative de mise à jour avec un body vide.
+ * 4. Tentative de mise à jour d'un contrat qui n'existe pas.
+ * 
+ */
+
 @isTest
 public class ContractUpdateTest {
     
@@ -11,6 +22,9 @@ public class ContractUpdateTest {
     
     //CONTRACT02_TEST01 : Update d'un contrat existant 
     @isTest
+    /**
+     * @description testUpdateContactValid Mise à jour d'un contrat existant avec des données valides.
+     */
     public static void testUpdateContactValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
@@ -61,6 +75,9 @@ public class ContractUpdateTest {
     
     //CONTRACT02_TEST02 : Update d'un contrat avec un ID invalide
     @isTest
+    /**
+     * @description testUpdateContractInvalidId Tentative de mise à jour d'un contrat avec un ID invalide.
+     */
     public static void testUpdateContractInvalidId() {
         
         // ETANT DONNE une requête avec un ID de contrat invalide
@@ -95,6 +112,9 @@ public class ContractUpdateTest {
     
     //CONTRACT02_TEST03 : Update d'un contrat avec un body vide
     @isTest
+    /**
+     * @description testUpdateContractEmptyBody Tentative de mise à jour avec un body vide.
+     */
     public static void testUpdateContractEmptyBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -127,6 +147,9 @@ public class ContractUpdateTest {
     
     // CONTACT02_TEST04 : Test avec un contrat non trouvé
     @isTest
+    /**
+     * @description testUpdateContractNotFound Tentative de mise à jour d'un contrat qui n'existe pas.
+     */
     public static void testUpdateContractNotFound() {
         
         // ETANT DONNE une requête avec un ID de contrat valide mais inexistant dans la base de données

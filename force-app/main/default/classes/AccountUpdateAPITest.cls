@@ -1,3 +1,14 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de mise à jour des comptes.
+ * 
+ * Les tests incluent les vérifications suivantes :
+ * - Mise à jour d'un compte existant avec des données valides.
+ * - Gestion de l'erreur si l'ID du compte est invalide.
+ * - Gestion de l'erreur si le corps de la requête est vide.
+ * - Gestion de l'erreur si le compte n'est pas trouvé.
+ * 
+ */
+
 @isTest
 public class AccountUpdateAPITest {
     
@@ -10,6 +21,9 @@ public class AccountUpdateAPITest {
     
     //ACCOUNT02_TEST01 : Update d'un contrat existant 
     @isTest
+    /**
+     * @description testUpdateAccountValid Mise à jour d'un compte existant avec des données valides.
+     */
     public static void testUpdateAccountValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
@@ -57,6 +71,9 @@ public class AccountUpdateAPITest {
     
     //ACCOUNT02_TEST02 : Update d'un compte avec un ID invalide
     @isTest
+    /**
+     * @description testUpdateContractInvalidId Gestion de l'erreur si l'ID du compte est invalide.
+     */
     public static void testUpdateContractInvalidId() {
         
         // ETANT DONNE une requête avec un ID de contrat invalide
@@ -91,6 +108,9 @@ public class AccountUpdateAPITest {
     
     //ACCOUNT02_TEST03 : Update d'un compte avec un body vide
     @isTest
+    /**
+     * @description testUpdateContractEmptyBody Gestion de l'erreur si le corps de la requête est vide.
+     */
     public static void testUpdateContractEmptyBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -123,6 +143,9 @@ public class AccountUpdateAPITest {
     
     // ACCOUNT02_TEST04 : Test avec un compte non trouvé
     @isTest
+    /**
+     * @description testUpdateContractNotFound Gestion de l'erreur si le compte n'est pas trouvé.
+     */
     public static void testUpdateContractNotFound() {
         
         // ETANT DONNE une requête avec un ID de compte valide mais inexistant dans la base de données

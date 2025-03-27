@@ -1,3 +1,14 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de création de contacts.
+ * 
+ * Les tests vérifient les scénarios suivants :
+ * 1. Vérification de l'existence d'un contact déjà existant.
+ * 2. Création d'un nouveau contact.
+ * 3. Gestion des erreurs liées à un body de requête vide.
+ * 4. Gestion des erreurs liées à une adresse email invalide.
+ * 
+ */
+
 @isTest
 public class ContactCreationAPITest {
     
@@ -9,6 +20,9 @@ public class ContactCreationAPITest {
     
     //CONTACT01_TEST01 : Vérification de l'existence du contact
     @isTest
+    /**
+     * @description testContactExistence Vérification de l'existence d'un contact déjà existant.
+     */
     static void testContactExistence() {
         
         // ETANT DONNE une requête de création de contact d'un contact déjà existant
@@ -52,6 +66,9 @@ public class ContactCreationAPITest {
     
     //CONTACT01_TEST02 : Création d'un contact car l'email n'existe pas 
     @isTest
+    /**
+     * @description testContactCreation Création d'un nouveau contact.
+     */
     static void testContactCreation(){
         
         // ETANT DONNE une requête de création de contact non existant dans la base de données
@@ -94,6 +111,9 @@ public class ContactCreationAPITest {
     
     //CONTACT01_TEST03 : Gestion de l'erreur si le body est vide
     @isTest
+    /**
+     * @description testEmptyRequestBody Gestion des erreurs liées à un body de requête vide.
+     */
     static void testEmptyRequestBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -126,6 +146,9 @@ public class ContactCreationAPITest {
     //CONTACT01_TEST04 : Gestion de l'erreur pour une adresse email invalide
     
     @isTest
+    /**
+     * @description testInvalidEmail Gestion des erreurs liées à une adresse email invalide.
+     */
     static void testInvalidEmail() {
         
         // ETANT DONNE une requête avec une adresse email invalide

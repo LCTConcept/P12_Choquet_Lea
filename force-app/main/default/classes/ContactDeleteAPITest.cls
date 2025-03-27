@@ -1,3 +1,13 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de suppression de contacts.
+ * 
+ * Les tests vérifient les scénarios suivants :
+ * 1. Suppression d'un contact existant.
+ * 2. Suppression avec un ID de contact invalide.
+ * 3. Suppression d'un contact inexistant.
+ * 
+ */
+
 @isTest
 public class ContactDeleteAPITest {
     
@@ -11,6 +21,9 @@ public class ContactDeleteAPITest {
     //CONTACT03_TEST01 : Suppression d'un contact existant 
     
     @isTest
+    /**
+     * @description testUpdateContactValid Suppression d'un contact existant.
+     */
     public static void testUpdateContactValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
@@ -41,6 +54,9 @@ public class ContactDeleteAPITest {
     
     // CONTACT03_TEST02 : Désactivation avec un ID invalide 
     @isTest
+    /**
+     * @description testDeactivateInvalidIdContact Suppression avec un ID de contact invalide.
+     */
     public static void testDeactivateInvalidIdContact() {
         RestRequest req = new RestRequest();
         req.requestUri = '/services/apexrest/contacts/NonExistentId';
@@ -62,6 +78,9 @@ public class ContactDeleteAPITest {
     
     // CONTACT03_TEST03 : Désactivation d’un contact inexistant
     @isTest
+    /**
+     * @description testDeactivateNonExistantContact Suppression d'un contact inexistant.
+     */
     public static void testDeactivateNonExistantContact() {
         RestRequest req = new RestRequest();
         req.requestUri = '/services/apexrest/contacts/0015w00000Pm3EwAA';

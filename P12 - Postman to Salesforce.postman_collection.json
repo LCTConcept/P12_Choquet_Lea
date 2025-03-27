@@ -1,0 +1,1937 @@
+{
+	"info": {
+		"_postman_id": "640d72ff-cf31-4ef0-a6b7-4e86b8dfe704",
+		"name": "P12 - Postman to Salesforce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42505550"
+	},
+	"item": [
+		{
+			"name": "P12",
+			"item": [
+				{
+					"name": "Create contact",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Amy\",\r\n\"Email\": \"testamy001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update contact",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"VIAL\",\r\n\"FirstName\": \"Jeremy\",\r\n\"Email\": \"jeremyvial001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"VIAL\",\r\n\"FirstName\": \"Jeremy\",\r\n\"Email\": \"jeremyvial001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create contract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update contract",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Name\": \"Test Account POSTMAN 001\",\r\n\"Phone\": \"0147852369\",\r\n\"AccountNumber\": \"TEST001account\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/account",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Historique",
+			"item": [
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000hbOvRYAU",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"36\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000hbOvRYAU",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000hbOvRYAU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000K1nPlYAJ",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000K1nPlYAJ",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000K1nPlYAJ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000K1nPlYAJ",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Livrable Un Modifié\",\r\n\"Email\": \"testlivrable001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000K1nPlYAJ",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000K1nPlYAJ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Livrable Un Modifié\",\r\n\"Email\": \"testlivrable001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Livrable Un\",\r\n\"Email\": \"testlivrable001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Livrable Un\",\r\n\"Email\": \"testlivrable001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Mai\",\r\n\"Email\": \"testmai001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Avril\",\r\n\"Email\": \"testavril001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Mars\",\r\n\"Email\": \"testmars001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Mars\",\r\n\"Email\": \"testmars001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Amy\",\r\n\"Email\": \"testamy001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fHfk3YAC",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"36\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fHfk3YAC",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fHfk3YAC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"15\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-15\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISBHVYA5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Kendall\",\r\n\"Email\": \"kendaltest003@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISBHVYA5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Sam\",\r\n\"Email\": \"testsam001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Eric\",\r\n\"Email\": \"testeric001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Lola\",\r\n\"Email\": \"testlola001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fIyKfYAK",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"36\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fIyKfYAK",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fIyKfYAK"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"20\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISnbJYAT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISnbJYAT",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISnbJYAT"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Kendall\",\r\n\"Email\": \"kendaltest002@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISBHVYA5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Sarah\",\r\n\"Email\": \"testsarah001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"12\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"12\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"36\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"36\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"ContractTerm\": \"36\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/800WU00000fGV3UYAW",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								"800WU00000fGV3UYAW"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract/",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISBHVYA5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Kendall\",\r\n\"Email\": \"kendaltest001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts/003WU00000ISBHVYA5",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts",
+								"003WU00000ISBHVYA5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Amy\",\r\n\"Email\": \"testamy001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Amy\",\r\n\"Email\": \"testamy001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Activated\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"protocolProfileBehavior": {
+						"followAuthorizationHeader": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"TEST\",\r\n\"FirstName\": \"Amy\",\r\n\"Email\": \"testamy001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"VIAL\",\r\n\"FirstName\": \"Jeremy\",\r\n\"Email\": \"jeremyvial001@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{_endpoint}}/services/data/v{{version}}/limits",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Visualizer that renders a Chart.js graph with the Salesforce API limits consumption",
+									"const template = `<script src=\"https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js\"></script>",
+									"<canvas id=\"myChart\" width=\"400\" height=\"800\"></canvas>",
+									"<script>",
+									"pm.getData((err, chartData) => {",
+									"    const getTooltipFooter = (tooltipItems) => {",
+									"        const index = tooltipItems[0].dataIndex;",
+									"        return 'Consumed '+ chartData.consumed[index] +' out of '+ chartData.max[index];",
+									"    };",
+									"",
+									"    const ctx = document.getElementById('myChart').getContext('2d');",
+									"    const myChart = new Chart(ctx, {",
+									"        type: 'bar',",
+									"        data: {",
+									"            labels: chartData.labels,",
+									"            datasets: [",
+									"                {",
+									"                    label: '% Consumed',",
+									"                    data: chartData.consumedPercent,",
+									"                    backgroundColor: 'rgba(255, 99, 132, 1)',",
+									"                    borderColor: 'rgba(255, 99, 132, 1)',",
+									"                    borderWidth: 1",
+									"                }",
+									"            ]",
+									"        },",
+									"        options: {",
+									"            indexAxis: 'y',",
+									"            responsive: true,",
+									"            scales: {",
+									"                x: {",
+									"                    beginAtZero: true,",
+									"                    ticks: {",
+									"                        callback: (value, index, values) => value + '%'",
+									"                    },",
+									"                    max: 100",
+									"                }",
+									"            },",
+									"            interaction: {",
+									"                intersect: false,",
+									"                mode: 'y'",
+									"            },",
+									"            plugins: {",
+									"                tooltip: {",
+									"                    callbacks: {",
+									"                        footer: getTooltipFooter,",
+									"                        label: (tooltipItems) => tooltipItems.raw + '%'",
+									"                    }",
+									"                },",
+									"                title: {",
+									"                    display: true,",
+									"                    text: 'API Limits Consumption'",
+									"                },",
+									"                legend: {",
+									"                    display: false",
+									"                }",
+									"            }",
+									"        }",
+									"    });",
+									"});",
+									"</script>`;",
+									"",
+									"// Format API response into chart data",
+									"const responseJson = pm.response.json();",
+									"const chartData = {",
+									"    labels: [],",
+									"    consumed: [],",
+									"    consumedPercent: [],",
+									"    max: []",
+									"};",
+									"Object.keys(responseJson).forEach((limitName) => {",
+									"    const { Max, Remaining } = responseJson[limitName];",
+									"    const consumed = Max - Remaining;",
+									"    let percent = 0;",
+									"    if (Max !== 0) {",
+									"        percent = (consumed / Max) * 100;",
+									"        percent = percent",
+									"            .toString()",
+									"            .match(/^-?\\d+(?:\\.\\d{0,2})?/)[0];",
+									"    }",
+									"    chartData.labels.push(limitName);",
+									"    chartData.consumed.push(consumed);",
+									"    chartData.consumedPercent.push(percent);",
+									"    chartData.max.push(Max);",
+									"});",
+									"// Render vizualizer",
+									"pm.visualizer.set(template, chartData);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{_endpoint}}/services/data/v{{version}}/limits",
+							"host": [
+								"{{_endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"limits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{_endpoint}}/services/data/v{{version}}/limits",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Visualizer that renders a Chart.js graph with the Salesforce API limits consumption",
+									"const template = `<script src=\"https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js\"></script>",
+									"<canvas id=\"myChart\" width=\"400\" height=\"800\"></canvas>",
+									"<script>",
+									"pm.getData((err, chartData) => {",
+									"    const getTooltipFooter = (tooltipItems) => {",
+									"        const index = tooltipItems[0].dataIndex;",
+									"        return 'Consumed '+ chartData.consumed[index] +' out of '+ chartData.max[index];",
+									"    };",
+									"",
+									"    const ctx = document.getElementById('myChart').getContext('2d');",
+									"    const myChart = new Chart(ctx, {",
+									"        type: 'bar',",
+									"        data: {",
+									"            labels: chartData.labels,",
+									"            datasets: [",
+									"                {",
+									"                    label: '% Consumed',",
+									"                    data: chartData.consumedPercent,",
+									"                    backgroundColor: 'rgba(255, 99, 132, 1)',",
+									"                    borderColor: 'rgba(255, 99, 132, 1)',",
+									"                    borderWidth: 1",
+									"                }",
+									"            ]",
+									"        },",
+									"        options: {",
+									"            indexAxis: 'y',",
+									"            responsive: true,",
+									"            scales: {",
+									"                x: {",
+									"                    beginAtZero: true,",
+									"                    ticks: {",
+									"                        callback: (value, index, values) => value + '%'",
+									"                    },",
+									"                    max: 100",
+									"                }",
+									"            },",
+									"            interaction: {",
+									"                intersect: false,",
+									"                mode: 'y'",
+									"            },",
+									"            plugins: {",
+									"                tooltip: {",
+									"                    callbacks: {",
+									"                        footer: getTooltipFooter,",
+									"                        label: (tooltipItems) => tooltipItems.raw + '%'",
+									"                    }",
+									"                },",
+									"                title: {",
+									"                    display: true,",
+									"                    text: 'API Limits Consumption'",
+									"                },",
+									"                legend: {",
+									"                    display: false",
+									"                }",
+									"            }",
+									"        }",
+									"    });",
+									"});",
+									"</script>`;",
+									"",
+									"// Format API response into chart data",
+									"const responseJson = pm.response.json();",
+									"const chartData = {",
+									"    labels: [],",
+									"    consumed: [],",
+									"    consumedPercent: [],",
+									"    max: []",
+									"};",
+									"Object.keys(responseJson).forEach((limitName) => {",
+									"    const { Max, Remaining } = responseJson[limitName];",
+									"    const consumed = Max - Remaining;",
+									"    let percent = 0;",
+									"    if (Max !== 0) {",
+									"        percent = (consumed / Max) * 100;",
+									"        percent = percent",
+									"            .toString()",
+									"            .match(/^-?\\d+(?:\\.\\d{0,2})?/)[0];",
+									"    }",
+									"    chartData.labels.push(limitName);",
+									"    chartData.consumed.push(consumed);",
+									"    chartData.consumedPercent.push(percent);",
+									"    chartData.max.push(Max);",
+									"});",
+									"// Render vizualizer",
+									"pm.visualizer.set(template, chartData);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{_endpoint}}/services/data/v{{version}}/limits",
+							"host": [
+								"{{_endpoint}}"
+							],
+							"path": [
+								"services",
+								"data",
+								"v{{version}}",
+								"limits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"LastName\": \"VIAL\",\r\n\"FirstName\": \"Jeremy\",\r\n\"Email\": \"jeremyvial002@test.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contacts",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"AccountId\": \"001WU00000k6FoLYAU\",\r\n\"ContractTerm\": \"24\",\r\n\"Status\": \"Draft\",\r\n\"StartDate\": \"2024-03-11\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://openclassrooms-6f-dev-ed.develop.my.salesforce.com/services/apexrest/contract",
+							"protocol": "https",
+							"host": [
+								"openclassrooms-6f-dev-ed",
+								"develop",
+								"my",
+								"salesforce",
+								"com"
+							],
+							"path": [
+								"services",
+								"apexrest",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

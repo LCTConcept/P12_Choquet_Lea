@@ -1,3 +1,15 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de modification de contacts.
+ * 
+ * Les tests vérifient les scénarios suivants :
+ * 1. Mise à jour d'un contact existant avec des données valides.
+ * 2. Mise à jour avec un ID de contact invalide.
+ * 3. Mise à jour avec un contact non trouvé.
+ * 4. Mise à jour avec un body vide.
+ * 5. Mise à jour avec un email invalide.
+ * 
+ */
+
 @isTest
 public class ContactUpdateAPITest {
     
@@ -10,6 +22,9 @@ public class ContactUpdateAPITest {
     
     //CONTACT02_TEST01 : Update d'un contact existant 
     @isTest
+    /**
+     * @description testUpdateContactValid Mise à jour d'un contact existant avec des données valides.
+     */
     public static void testUpdateContactValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
@@ -50,6 +65,9 @@ public class ContactUpdateAPITest {
     
     // CONTACT02_TEST02 : Test avec un ID de contact invalide
     @isTest
+    /**
+     * @description testUpdateContactInvalidId Mise à jour avec un ID de contact invalide.
+     */
     public static void testUpdateContactInvalidId() {
         
         // ETANT DONNE une requête avec un ID de contact invalide
@@ -84,6 +102,9 @@ public class ContactUpdateAPITest {
     
     // CONTACT02_TEST03 : Test avec un contact non trouvé
     @isTest
+    /**
+     * @description testUpdateContactNotFound Mise à jour avec un contact non trouvé.
+     */
     public static void testUpdateContactNotFound() {
         
         // ETANT DONNE une requête avec un ID de contact valide mais inexistant dans la base de données
@@ -118,6 +139,9 @@ public class ContactUpdateAPITest {
     
     // CONTACT02_TEST04 : Test avec un body vide
     @isTest
+    /**
+     * @description testUpdateContactEmptyBody Mise à jour avec un body vide.
+     */
     public static void testUpdateContactEmptyBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -150,6 +174,9 @@ public class ContactUpdateAPITest {
     
     // CONTACT02_TEST05 : Test avec un email invalide
     @isTest
+    /**
+     * @description testUpdateContactInvalidEmail Mise à jour avec un email invalide.
+     */
     public static void testUpdateContactInvalidEmail() {
         
         // ETANT DONNE une requête avec un email invalide dans le body

@@ -1,7 +1,16 @@
-@RestResource(urlMapping='/contract/*')
+/**
+ * Cette classe permet de créer et de mettre à jour un contrat existant via des requêtes HTTP POST, PATCH.
+ * 
+ * La gestion des erreurs suit les codes de statut de la documentation officielle Salesforce :
+ * https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm
+ * 
+ * Méthodes exposées :
+ * - createContractRest() : Création d'un contrat. 
+ * - updateContractRest() : Mise à jour d'un contrat existant.
+ * 
+ */
 
-/*Pour l'intégralité de ce code, les status.code font référence à la documentation officielle Salesforce : 
-* https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm */
+@RestResource(urlMapping='/contract/*')
 
 global with sharing class ContractAPI {
     

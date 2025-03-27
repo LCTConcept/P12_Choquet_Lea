@@ -1,3 +1,13 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de création de contrats.
+ * 
+ * Les tests vérifient les scénarios suivants :
+ * 1. Vérification de la création d'un contrat avec des données valides.
+ * 2. Gestion des erreurs liées à un body de requête vide.
+ * 3. Vérification des erreurs de validation des champs obligatoires.
+ * 
+ */
+
 @isTest
 public class ContractCreationTest {
     
@@ -10,6 +20,9 @@ public class ContractCreationTest {
     
     // CONTRACT01_TEST01 : Vérification de la création d’un contrat
     @isTest
+    /**
+     * @description testContractCreation Vérification de la création d'un contrat avec des données valides.
+     */
     static void testContractCreation() {
         
         // Récupération du compte de test
@@ -57,6 +70,9 @@ public class ContractCreationTest {
     
     //CONTRACT01_TEST02 : Gestion de l'erreur si le body est vide
     @isTest
+    /**
+     * @description testEmptyRequestBody Gestion des erreurs liées à un body de requête vide.
+     */
     static void testEmptyRequestBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -88,6 +104,9 @@ public class ContractCreationTest {
     
     // CONTRACT01_TEST03 : Gestion d'une requête avec un champ obligatoire manquant
     @isTest
+    /**
+     * @description testMissingRequiredFields Vérification des erreurs de validation des champs obligatoires.
+     */
     static void testMissingRequiredFields() {
         // Récupération du compte de test
         Account testAccount = [SELECT Id FROM Account WHERE Name = 'Test Account' LIMIT 1];

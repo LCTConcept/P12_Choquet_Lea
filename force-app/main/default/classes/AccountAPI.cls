@@ -1,14 +1,24 @@
+/**
+ * Cette classe permet de créer un compte et de mettre à jour un compte existant via des requêtes HTTP POST et PATCH..
+ * 
+ * La gestion des erreurs suit les codes de statut de la documentation officielle Salesforce :
+ * https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm
+ * 
+ * Méthodes exposées :
+ * - createAccountRest() : Crée un nouveau compte dans Salesforce.
+ * - updateAccountRest() : Met à jour un compte existant dans Salesforce.
+ */
+
 @RestResource(urlMapping='/account/*')
 
-/*Pour l'intégralité de ce code, les status.code font référence à la documentation officielle Salesforce : 
-* https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm */
-
 global with sharing class AccountAPI {
-    
     
     //ACCOUNT01 : Création d’un compte 
     
     @HttpPost
+    /**
+     * @description createAccountRest Crée un nouveau compte dans Salesforce.
+     */
     global static void createAccountRest(){
         
         RestRequest req = RestContext.request;
@@ -68,6 +78,9 @@ global with sharing class AccountAPI {
     
     //ACCOUNT02 : Modification d’un compte
     @HttpPatch
+    /**
+     * @description updateAccountRest Met à jour un compte existant dans Salesforce.
+     */
     global static void updateAccountRest(){
         
         RestRequest req = RestContext.request;

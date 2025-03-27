@@ -1,9 +1,22 @@
+/**
+ * Cette classe contient des tests unitaires pour vérifier les différentes fonctionnalités de l'API de création de comptes.
+ * 
+ * Les tests incluent les vérifications suivantes :
+ * - Création d'un compte avec des données valides.
+ * - Gestion de l'erreur lorsque le corps de la requête est vide.
+ * - Gestion de l'erreur lorsqu'un champ obligatoire est manquant dans la requête.
+ * 
+ */
+
 @isTest
 public class AccountCreateAPITest {
     
     
     // ACCOUNT01_TEST01 : Vérification de la création d’un compte
     @isTest
+    /**
+     * @description testContractCreation Création d'un compte avec des données valides.
+     */
     static void testContractCreation() {
         
         
@@ -46,6 +59,9 @@ public class AccountCreateAPITest {
     
     //ACCOUNT01_TEST02 : Gestion de l'erreur si le body est vide
     @isTest
+    /**
+     * @description testEmptyRequestBody Gestion de l'erreur lorsque le corps de la requête est vide.
+     */
     static void testEmptyRequestBody() {
         
         // ETANT DONNE une requête avec un body vide
@@ -77,6 +93,9 @@ public class AccountCreateAPITest {
     
     // ACCOUNT01_TEST03 : Gestion d'une requête avec un champ obligatoire manquant
     @isTest
+    /**
+     * @description testMissingRequiredFields Gestion de l'erreur lorsqu'un champ obligatoire est manquant dans la requête.
+     */
     static void testMissingRequiredFields() {
         
         // ETANT DONNE une requête où il manque "StartDate"

@@ -1,14 +1,25 @@
+/**
+ * Cette classe permet de créer, de mettre à jour et désactiver un contact existant via des requêtes HTTP POST, PATCH et DELETE.
+ * 
+ * La gestion des erreurs suit les codes de statut de la documentation officielle Salesforce :
+ * https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm
+ * 
+ * Méthodes exposées :
+ * - createContactRest() : Création d'un contact.
+ * - updateContactRest() : Mise à jour d'un contact existant.
+ * - deactivateContactRest() : Désactivation d'un contact.
+ */
+
 @RestResource(urlMapping='/contacts/*')
-
-/*Pour l'intégralité de ce code, les status.code font référence à la documentation officielle Salesforce : 
-* https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/errorcodes.htm */
-
 
 global with sharing class ContactAPI {
     
     //CONTACT01 : Création d’un contact avec vérification de l’email
     
     @HttpPost
+    /**
+     * @description createContactRest Création d'un contact.
+     */
     global static void createContactRest(){
         
         RestRequest req = RestContext.request;
@@ -85,6 +96,9 @@ global with sharing class ContactAPI {
     
     //CONTACT02 : Modification d’un contact
     @HttpPatch
+    /**
+     * @description updateContactRest Mise à jour d'un contact existant.
+     */
     global static void updateContactRest(){
         
         RestRequest req = RestContext.request;
@@ -157,6 +171,9 @@ global with sharing class ContactAPI {
     
     //CONTACT03 : Désactivation d’un contact
     @HttpDelete
+    /**
+     * @description deactivateContactRest Désactivation d'un contact.
+     */
     global static void deactivateContactRest(){
         
         
