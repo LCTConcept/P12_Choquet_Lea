@@ -72,9 +72,9 @@ public class AccountUpdateAPITest {
     //ACCOUNT02_TEST02 : Update d'un compte avec un ID invalide
     @isTest
     /**
-     * @description testUpdateContractInvalidId Gestion de l'erreur si l'ID du compte est invalide.
+     * @description testUpdateAccountInvalidId Gestion de l'erreur si l'ID du compte est invalide.
      */
-    public static void testUpdateContractInvalidId() {
+    public static void testUpdateAccountInvalidId() {
         
         // ETANT DONNE une requête avec un ID de contrat invalide
         RestRequest req = new RestRequest();
@@ -109,9 +109,9 @@ public class AccountUpdateAPITest {
     //ACCOUNT02_TEST03 : Update d'un compte avec un body vide
     @isTest
     /**
-     * @description testUpdateContractEmptyBody Gestion de l'erreur si le corps de la requête est vide.
+     * @description testUpdateAccountEmptyBody Gestion de l'erreur si le corps de la requête est vide.
      */
-    public static void testUpdateContractEmptyBody() {
+    public static void testUpdateAccountEmptyBody() {
         
         // ETANT DONNE une requête avec un body vide
          Account existingAccount = [SELECT Id  FROM Account WHERE Name = 'Test Account' LIMIT 1];
@@ -144,9 +144,9 @@ public class AccountUpdateAPITest {
     // ACCOUNT02_TEST04 : Test avec un compte non trouvé
     @isTest
     /**
-     * @description testUpdateContractNotFound Gestion de l'erreur si le compte n'est pas trouvé.
+     * @description testUpdateAccountNotFound Gestion de l'erreur si le compte n'est pas trouvé.
      */
-    public static void testUpdateContractNotFound() {
+    public static void testUpdateAccountNotFound() {
         
         // ETANT DONNE une requête avec un ID de compte valide mais inexistant dans la base de données
         RestRequest req = new RestRequest();

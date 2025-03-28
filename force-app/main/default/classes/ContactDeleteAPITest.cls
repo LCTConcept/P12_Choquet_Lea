@@ -22,9 +22,9 @@ public class ContactDeleteAPITest {
     
     @isTest
     /**
-     * @description testUpdateContactValid Suppression d'un contact existant.
+     * @description testDeleteContactValid Suppression d'un contact existant.
      */
-    public static void testUpdateContactValid(){
+    public static void testDeleteContactValid(){
         
         //ETANT DONNE une requête de modification d'un contact existant dans la base de données
         Contact existingContact = [SELECT Id, LastName, Is_Active__c FROM Contact WHERE Email = 'sarahparker@test.com' LIMIT 1];

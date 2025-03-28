@@ -15,9 +15,9 @@ public class AccountCreateAPITest {
     // ACCOUNT01_TEST01 : Vérification de la création d’un compte
     @isTest
     /**
-     * @description testContractCreation Création d'un compte avec des données valides.
+     * @description testAccountCreation Création d'un compte avec des données valides.
      */
-    static void testContractCreation() {
+    static void testAccountCreation() {
         
         
         // ETANT DONNE une requête de création de contrat avec un AccountId valide
@@ -98,9 +98,9 @@ public class AccountCreateAPITest {
      */
     static void testMissingRequiredFields() {
         
-        // ETANT DONNE une requête où il manque "StartDate"
+        // ETANT DONNE une requête où il manque un champ obligatoire
         RestRequest req = new RestRequest();
-        req.requestUri = '/services/apexrest/contract/';
+        req.requestUri = '/services/apexrest/account/';
         req.httpMethod = 'POST';
         
         Map<String, Object> body = new Map<String, Object>{  
@@ -128,7 +128,7 @@ public class AccountCreateAPITest {
         
         // VERIFICATIONS :
         System.assertEquals(400, res.statusCode, 'Le statut de la réponse n\'est pas 400');
-        System.assert(responseBody.contains('Le champs Name est obligatoire.'));
+        System.assert(responseBody.contains('Le champ Name est obligatoire.'));
     }
     
     

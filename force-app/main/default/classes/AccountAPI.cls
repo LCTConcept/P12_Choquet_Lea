@@ -22,16 +22,16 @@ global with sharing class AccountAPI {
     global static void createAccountRest(){
         
         RestRequest req = RestContext.request;
-        RestResponse res = Restcontext.response;
+        RestResponse res = RestContext.response;
         
         //Etape 1 : Récupérer les données de la requête API et renvoyer une erreur si aucune n'est fournie
         String requestBody = req.requestBody.toString();
         if (String.isBlank(requestBody)) {
             res.statusCode = 400;
-            Map<String, String> unvalidRequestErrorResponse = new Map<String, String>{
+            Map<String, String> invalidRequestErrorResponse = new Map<String, String>{
                 'Message' => 'Aucune donnée fournie pour la création du compte.'
                     };
-                        res.responseBody = Blob.valueOf(JSON.serialize(unvalidRequestErrorResponse));
+                        res.responseBody = Blob.valueOf(JSON.serialize(invalidRequestErrorResponse));
             return;
         }
         
@@ -41,7 +41,7 @@ global with sharing class AccountAPI {
         if (!reqbodyMap.containsKey('Name')) {
             res.statusCode = 400;
             Map<String, String> missingFieldErrorResponse = new Map<String, String>{
-                'Message' => 'Le champs Name est obligatoire.'
+                'Message' => 'Le champ Name est obligatoire.'
                     };
                         res.responseBody = Blob.valueOf(JSON.serialize(missingFieldErrorResponse));
             return;

@@ -20,7 +20,7 @@ global with sharing class ContractAPI {
     global static void createContractRest(){
         
         RestRequest req = RestContext.request;
-        RestResponse res = Restcontext.response;
+        RestResponse res = RestContext.response;
         
         //Etape 1 : Récupérer les données de la requête API et renvoyer une erreur si aucune n'est fournie
         String requestBody = req.requestBody.toString();
